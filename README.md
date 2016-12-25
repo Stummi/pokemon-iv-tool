@@ -7,13 +7,21 @@ Also the CLI frontend is a bit cumbersome right now. It's just improvised to mak
 
 ## Building
 
-To build the tools, you need maven and a current JDK 8. Clone this repository, then type
+To build the tools, you need a current Java 8 SDK. Clone this repository, then type
 
 ``` 
 mvn package
-``` 
+```
 
-and you will end up with a runnable jar file under target. You may want to put it on a known place and add a shell scipt like this in your searchpath ($PATH)
+If you don't have mvn installed on your system, type
+
+```
+./mvnw package
+```
+
+instead
+
+after that, you will end up with a runnable jar file under target. You may want to put it on a known place and add a shell scipt like this in your searchpath ($PATH)
 
 ```
 #!/bin/sh
