@@ -41,7 +41,7 @@ public class StatFindReport {
 		System.out.println("Results for your " + type + ": ");
 		System.out.println();
 
-		IntSummaryStatistics perf = pokemon.stream().mapToDouble(Pokemon::perfection).mapToInt(d -> (int) (d * 100)).summaryStatistics();
+		IntSummaryStatistics perf = pokemon.stream().mapToDouble(Pokemon::perfection).mapToInt(d -> (int) Math.round(d * 100)).summaryStatistics();
 		IntSummaryStatistics att = pokemon.stream().mapToInt(Pokemon::getIvAttack).summaryStatistics();
 		IntSummaryStatistics def = pokemon.stream().mapToInt(Pokemon::getIvDefense).summaryStatistics();
 		IntSummaryStatistics sta = pokemon.stream().mapToInt(Pokemon::getIvStamina).summaryStatistics();
