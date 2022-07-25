@@ -1,3 +1,5 @@
+**Notice:** This project was fun, but I abandoned it long ago. As I am not a active player anymore since long time, I don't believe it matches how anything works today
+
 # Pokemon IV Calculator
 
 Here you will find a Pokemon IV Calculator written in Java which can be used on command line.
